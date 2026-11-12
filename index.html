@@ -1,77 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="dark">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" >
-    <link rel="stylesheet" href="style.css"> 
+    <title>Sebastian Gil | Desarrollador Web Full Stack</title>
+    <!-- Tipografías modernas: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="d-flex justify-content-center" >
-         <h1>Sebastian Gil</h1>
-         <img src="./img/images.jpeg" alt="Foto de Sebastian Gil" width="200">
-          
-         <p>Soy <strong>coder</strong> de desarrollo de 
-            software en formacion, me gusta aprender y compartir
-             mis conocimientos con los demas.</p>
+
+    <!-- Barra de navegación superior fija -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="brand">SG<span>.dev</span></a>
+            <nav class="nav-links">
+                <a href="#sobre-mi">Perfil</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#proyectos">Proyectos</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Cambiar tema" title="Cambiar tema">
+                    <i class="fi fi-rr-brightness"></i>
+                </button>
+                <a href="#proyectos" class="btn-nav">Ver Portafolio</a>
+            </div>
         </div>
-    <h2>Experiencia</h2>
-    <ul>
-        <li>Desarrollador web en XYZ Company (2020 - Presente)</li>
-        <p>He trabajado en el desarrollo de aplicaciones web utilizando tecnologías como HTML, CSS y JavaScript.</p>
-        <li>Asistente de desarrollo en ABC Startup (2018 - 2020)</li>
-        <p>Estuve de asistente en el desarrollo de aplicaciones web utilizando tecnologías como HTML, CSS y JavaScript.</p>
-    </ul>
-    <h2>mis proyectos</h2>
-    <table border="1">
-        <tr>
-            <th>Nombre</th>
-            <th>Descripción</th>
-        </tr>
-        <tr>
-            <td>Hoja de vida</td>
-            <td><img style="display: block; margin: 0 auto;" src="./img/hoja.jpeg" alt="Hoja de vida" width="200"> 
-            <title style="text-align: center;">Hoja de vida</title><p style="text-align: center;">En este proyecto se encuentra 
-                la hoja de vida en formato HTML</p> <a href="https://sebagil05.github.io/hoja-de-vida/" target="_blank" style="display: block; text-align: center;">Ver en vivo</a></td>
-        </tr>
-        <tr>
-            <td>Sección de Conferencistas</td>
-            <td><img style="display: block; margin: 0 auto;" src="./img/conferencistas.jpeg" alt="Conferencistas" width="200"> 
-            <title style="text-align: center;">Conferencistas</title><p style="text-align: center;">En este proyecto se encuentra 
-                la información de los conferencistas</p> <a href="https://sebagil05.github.io/eventos/" target="_blank" style="display: block; text-align: center;">Ver en vivo</a></td>
-        </tr>
-         <tr>
-            <td>Rueda Libre</td>
-            <td><img style="display: block; margin: 0 auto;" src="./img/images.png" alt="Rueda Libre" width="200"> 
-            <title style="text-align: center;">Rueda Libre</title><p style="text-align: center;">En este proyecto se encuentra 
-                la información de la rueda libre</p> <a href="https://sebagil05.github.io/rueda-libre/" target="_blank" style="display: block; text-align: center;">Ver en vivo</a></td>
-        </tr>
-         <tr>
-            <td>Mi perfil</td>
-            <td><img style="display: block; margin: 0 auto;" src="./img/perfil.png" alt="Mi perfil" width="200"> 
-            <title style="text-align: center;">Mi perfil</title><p style="text-align: center;">En este proyecto se encuentra 
-                la información de mi perfil</p> <a href="https://sebagil05.github.io/perfil/index.html" target="_blank" style="display: block; text-align: center;">Ver en vivo</a></td>
-        </tr>
-         <tr>
-            <td>Hamburguesas</td>
-            <td><img style="display: block; margin: 0 auto;" src="./img/hamburguesas.jpg" alt="hamburguesas" width="200"> 
-            <title style="text-align: center;">Hambuerguesas</title><p style="text-align: center;">En este proyecto se encuentra 
-                la pagina de hamburguesas que hicimos con bootstrap</p> <a href="./pag/hamburguesas.html" target="_blank" style="display: block; text-align: center;">Ver en vivo</a></td>
-        </tr>
-        <tr>
-            <td>Bootstrap</td>
-            <td><img style="display: block; margin: 0 auto;" src="./img/pag.jpg" alt="hamburguesas" width="200"> 
-            <title style="text-align: center;">Hambuerguesas</title><p style="text-align: center;">En este proyecto se encuentra 
-                la pagina de perfil realizada con bootstrap</p> <a href="./css/index.html" target="_blank" style="display: block; text-align: center;">Ver en vivo</a></td>
-        </tr>
-        <tr>
-            <td>Pagina de eventos</td>
-            <td><img style="display: block; margin: 0 auto;" src="./img/pageven.png" alt="hamburguesas" width="200"> 
-            <title style="text-align: center;">Hambuerguesas</title><p style="text-align: center;">En este proyecto se encuentra 
-                la pagina que realizamos con nuestros compañeros de celula</p> <a href="https://juliiands.github.io/Plataforma-Web-de-Eventos-Trabajo-Grupal/index.html" target="_blank" style="display: block; text-align: center;">Ver en vivo</a></td>
-        </tr>
-    </table>
+    </header>
+
+    <main class="container">
+        <!-- ==============================================
+             HERO / PERFIL PROFESIONAL
+             ============================================== -->
+        <section id="sobre-mi" class="hero-card">
+            <div class="hero-avatar-wrapper">
+                <img src="./img/images.jpeg" alt="Foto de perfil de Sebastian Gil" class="hero-avatar">
+                <span class="status-badge">
+                    <span class="pulse-dot"></span> Disponible para proyectos
+                </span>
+            </div>
+
+            <div class="hero-info">
+                <p class="hero-greeting">Hola, soy</p>
+                <h1>Sebastian Gil</h1>
+                <h2 class="hero-role">Desarrollador de Software &amp; Frontend Builder</h2>
+                <p class="hero-bio">
+                    Soy <strong>coder</strong> de desarrollo de software en formación apasionado por construir interfaces web limpias, accesibles y funcionales. Me encanta el aprendizaje continuo y compartir mis conocimientos con la comunidad tech.
+                </p>
+
+                <!-- Stack de tecnologías -->
+                <div class="tech-stack">
+                    <span class="tech-pill"><i class="fi fi-brands-html5"></i> HTML5</span>
+                    <span class="tech-pill"><i class="fi fi-brands-css3-alt"></i> CSS3</span>
+                    <span class="tech-pill"><i class="fi fi-brands-js"></i> JavaScript</span>
+                    <span class="tech-pill"><i class="fi fi-brands-bootstrap"></i> Bootstrap</span>
+                    <span class="tech-pill"><i class="fi fi-brands-github"></i> Git &amp; GitHub</span>
+                </div>
+
+                <!-- Redes y contacto -->
+                <div class="hero-cta">
+                    <a href="#proyectos" class="btn-primary">
+                        Explorar Proyectos <i class="fi fi-rr-arrow-small-right"></i>
+                    </a>
+                    <div class="social-links">
+                        <a href="https://github.com/sebagil05" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fi fi-brands-github"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fi fi-brands-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             EXPERIENCIA PROFESIONAL (TIMELINE)
+             ============================================== -->
+        <section id="experiencia" class="section-block">
+            <div class="section-header">
+                <span class="section-tag">TRAYECTORIA</span>
+                <h2>Experiencia Laboral</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Desarrollador Web</h3>
+                                <span class="company">XYZ Company</span>
+                            </div>
+                            <span class="date-badge">2020 — Presente</span>
+                        </div>
+                        <p>
+                            Desarrollo, maquetación y mantenimiento de aplicaciones web responsivas utilizando tecnologías estándar como HTML5, CSS3 y JavaScript moderno, optimizando la experiencia de usuario.
+                        </p>
+                        <div class="mini-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Asistente de Desarrollo</h3>
+                                <span class="company">ABC Startup</span>
+                            </div>
+                            <span class="date-badge">2018 — 2020</span>
+                        </div>
+                        <p>
+                            Apoyo en el ciclo de desarrollo frontend, estructuración semántica de vistas, pruebas de compatibilidad entre navegadores e implementación de estilos modulares.
+                        </p>
+                        <div class="mini-tags">
+                            <span>Maquetación</span>
+                            <span>UI/UX</span>
+                            <span>Control de Versiones</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             PORTAFOLIO DE PROYECTOS (GRID DE TARJETAS)
+             ============================================== -->
+        <section id="proyectos" class="section-block">
+            <div class="section-header">
+                <span class="section-tag">PORTAFOLIO</span>
+                <h2>Proyectos Destacados</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./img/hoja.jpeg" alt="Vista previa de Hoja de vida">
+                        <span class="project-category">HTML / CSS</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Hoja de Vida Web</h3>
+                        <p>Currículum vitae interactivo y estructurado en formato HTML semántico con diseño limpio para presentación profesional.</p>
+                        <div class="project-footer">
+                            <a href="https://sebagil05.github.io/hoja-de-vida/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                Ver en vivo <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./img/conferencistas.jpeg" alt="Vista previa Sección de Conferencistas">
+                        <span class="project-category">UI / Flexbox</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Sección de Conferencistas</h3>
+                        <p>Módulo informativo para eventos tecnológicos con tarjetas de ponentes, biografías, cargos y enlaces sociales.</p>
+                        <div class="project-footer">
+                            <a href="https://sebagil05.github.io/eventos/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                Ver en vivo <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./img/images.png" alt="Vista previa Rueda Libre">
+                        <span class="project-category">Web Design</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Rueda Libre</h3>
+                        <p>Plataforma web temática con navegación modular, tablas de tarifas, horarios y catálogo de rutas.</p>
+                        <div class="project-footer">
+                            <a href="https://sebagil05.github.io/rueda-libre/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                Ver en vivo <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./img/perfil.png" alt="Vista previa Mi Perfil">
+                        <span class="project-category">Personal Brand</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Mi Perfil Personal</h3>
+                        <p>Landing page de presentación personal que centraliza información biográfica, habilidades técnicas y contacto.</p>
+                        <div class="project-footer">
+                            <a href="https://sebagil05.github.io/perfil/index.html" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                Ver en vivo <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 5 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./img/hamburguesas.jpg" alt="Vista previa Página de Hamburguesas">
+                        <span class="project-category">Bootstrap 5</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Restaurante de Hamburguesas</h3>
+                        <p>Sitio web gastronómico responsivo desarrollado con el sistema de rejillas y componentes de Bootstrap.</p>
+                        <div class="project-footer">
+                            <a href="./pag/hamburguesas.html" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                Ver en vivo <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 6 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./img/pag.jpg" alt="Vista previa Perfil con Bootstrap">
+                        <span class="project-category">Bootstrap / CSS</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Perfil Profesional Bootstrap</h3>
+                        <p>Maquetación avanzada de portafolio combinando utilidades de Bootstrap con personalización de hojas de estilo.</p>
+                        <div class="project-footer">
+                            <a href="./css/index.html" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                Ver en vivo <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 7 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="./img/pageven.png" alt="Vista previa Plataforma Web de Eventos">
+                        <span class="project-category">Trabajo Colaborativo</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Plataforma Web de Eventos</h3>
+                        <p>Aplicación web desarrollada en equipo junto a compañeros de célula utilizando flujo colaborativo en Git y GitHub.</p>
+                        <div class="project-footer">
+                            <a href="https://juliiands.github.io/Plataforma-Web-de-Eventos-Trabajo-Grupal/index.html" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                Ver en vivo <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 <strong>Sebastian Gil</strong> — Desarrollado con código limpio y semántico.</p>
+            <a href="#" class="back-to-top">Volver arriba ↑</a>
+        </div>
+    </footer>
+
+    <!-- Script mínimo para alternar Modo Oscuro / Claro -->
+    <script>
+        const btnTheme = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
+        btnTheme.addEventListener('click', () => {
+            const current = htmlEl.getAttribute('data-theme');
+            htmlEl.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+        });
+    </script>
 </body>
 </html>
